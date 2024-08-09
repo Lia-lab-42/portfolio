@@ -21,21 +21,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Importation de la typographi Roboto Mono -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 
     <!-- 
         importation des google Materials Icons
         source: https://fonts.google.com/icons
     -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
 
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <header>
+    <header class="box">
         <!-- 
             barre de Navigation avec un composant Bulma.
             Reference: https://bulma.io/documentation/components/navbar/
@@ -43,9 +51,10 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <!-- logo -->
             <div class="navbar-brand">
-                 <a href="./">
-                     <img src="./images/developpement-web.png" width="72" height="72" alt="developpement web illustration">
-                 </a>
+                <a href="./" title="Priscilia Neuville">
+                    <img src="./images/developpement-web.png" width="64" height="64"
+                        alt="developpement web illustration">
+                </a>
             </div>
 
 
@@ -78,16 +87,77 @@
                     <div class="navbar-item">
                         <div class="buttons">
                             <button class="button" id="toggle-theme-btn">
-                                <span class="material-symbols-outlined">dark_mode</span>  
+                                <span class="material-symbols-outlined">dark_mode</span>
                             </button>
                             <!-- Le boutton github follow générer: https://buttons.github.io/ -->
-                            <a class="github-button" href="https://github.com/Lia-lab-42" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @Lia-lab-42 on GitHub">Follow @Lia-lab-42</a>
+                            <a class="github-button" href="https://github.com/Lia-lab-42"
+                                data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large"
+                                aria-label="Follow @Lia-lab-42 on GitHub">Follow @Lia-lab-42</a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!--
+        Courte présentation personnel sous forme de carte flottante
+        reference: https://bulma.io/documentation/components/card/
+    -->
+    <section id="main-card" class="container is-max-tablet">
+        <div class="card">
+            <!-- image principal de la carte -->
+            <div class="card-image">
+                <figure class="image is-600x400">
+                    <img src="https://placehold.co/600x400" alt="Placeholder image" />
+                </figure>
+            </div>
+            <div class="card-content">
+
+
+                <div class="media">
+                    <!-- image icon -->
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image" />
+                        </figure>
+                    </div>
+                    <!-- titre -->
+                    <div class="media-content">
+                        <p class="title is-4">Priscilia Neuville</p>
+                        <p class="subtitle is-6">@Cylia</p>
+                    </div>
+                </div>
+
+                <!-- contenu de la carte -->
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris. <a>@Cylya</a>.
+                    <br />
+                    <hr />
+                    <a>
+                        <span class="tag is-black">#css</span>
+                    </a>
+                    <a>
+                        <span class="tag is-dark">#html</span>
+                    </a>
+                    <a>
+                        <span class="tag is-primary">#javascript</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <a href="">
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </a>
+        </div>
+    </section>
+
 
     <script src="./javascript/index.js"></script>
     <!-- Javascript pour le boutton Github Follow -->

@@ -1,3 +1,67 @@
 * {
     font-family: "Roboto Mono", Verdana, Geneva, Tahoma, sans-serif
 }
+
+#main-card {
+    animation-name: slideIn;
+    animation-duration: .45s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+
+.material-symbols-outlined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.material-symbols-outlined:nth-child(2), .material-symbols-outlined:nth-child(3), .material-symbols-outlined:nth-child(4), .material-symbols-outlined:nth-child(5) {
+    margin-top: -15px;
+    animation-name: glowArrow;
+    animation-duration: .8s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.material-symbols-outlined:nth-child(2) {
+    animation-delay: .25;
+}
+.material-symbols-outlined:nth-child(3) {
+    animation-delay: .33;
+}
+.material-symbols-outlined:nth-child(4) {
+    animation-delay: .45;
+}
+
+.material-symbols-outlined:nth-child(4), .material-symbols-outlined:nth-child(3) {
+    margin-top: -20px;
+}
+
+@keyframes glowArrow {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes slideIn {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
